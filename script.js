@@ -33,7 +33,6 @@ function chargerCategories(){
     for( var i=0 ; i<categories.length;i++){
 		c = categories[i] ;
         dictCategories[c['code']] = c;
-        console.log("dict cat : "+dictCategories[c['code']]['libelle'] ) ;
         tr = document.createElement("tr");
         tdCode = document.createElement("td");
 		tdCode.textContent = c['code'];
@@ -68,8 +67,7 @@ function chargerTrucs(){
         tdLibelle = document.createElement("td");
 		tdLibelle.textContent = t['libelle'];
         tdLibelleCat = document.createElement("td");
-		//tdLibelleCat.textContent = dictCategories[t['code']]['libelle'];
-        tdLibelleCat.textContent = dictCategories.length;
+		tdLibelleCat.textContent = dictCategories[t['categorie']]['libelle'];
         button = document.createElement("button") ;
         button.textContent = "Supprimer" ;
         button.setAttribute("id",t['code'] );
