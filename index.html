@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Cours Microservices</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body onload="loading()">
+	<div class="container">
+		<div id="grid_logo">
+			<img src="logopythonjs.png" alt="logo python js">
+        </div>
+        <div id="grid_titre">
+            <h2>Démonstration cours python/javascript</h2>
+        </div>
+        <div id="grid_categories">
+            <h3>Les catégories</h3>
+            <table id="table_categories">
+                <thead>
+                    <tr>
+                        <th>Code</th>
+                        <th>Libellé</th>
+                        <th>Filtrer</th>
+                    </tr>
+                </thead>
+                <tbody id="table_categories_tbody">
+                </tbody>
+            </table>
+        </div>
+        <div id="grid_trucs">
+            <h3>Les trucs</h3>
+            <table id="table_trucs">
+                <thead>
+                    <tr>
+                        <th>Code</th>
+                        <th>Libellé</th>
+                        <th>Catégorie</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="table_trucs_tbody">
+                 
+                </tbody>
+            </table>
+        </div>
+        <div id="grid_add_truc">
+            <h3>Ajouter un truc</h3>
+            <form>
+                <label>Libellé</label>
+                <input type="text" id="truc_libelle"/>
+                <label>Catégorie</label>
+                <select id="truc_categorie"></select>
+                <button onclick="clicAjouter()">Ajouter</button>
+            </form>
+        </div>
+        <div id="grid_footer">
+            <h5>amedassi@lasalle63.fr</h5>
+        </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
